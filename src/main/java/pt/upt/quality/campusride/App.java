@@ -21,5 +21,9 @@ public class App {
         eBike.charge(20);
         System.out.println("E20 battery = " + eBike.getBatteryLevel());
         System.out.printf("S10 / 40 min = %.2f%n",fleet.findById("S10").calculatePrice(40));
+        rentalService.rentVehicle("B1");
+        System.out.println("B1 available after rent = "
+                + fleet.findById("B1").isAvailable());
+        rentalService.returnVehicle("B1");
     }
 }
