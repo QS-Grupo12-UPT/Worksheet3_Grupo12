@@ -21,5 +21,6 @@ public class App {
 
         System.out.println("Available vehicles = "
                 + report.availableVehicleIds());
+        System.out.println("Total available vehicles: " + report.countAvailableVehicles());
     }
 }
